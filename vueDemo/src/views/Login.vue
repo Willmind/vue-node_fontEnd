@@ -25,6 +25,10 @@
 </template>
 
 <script>
+    import axios from 'axios'
+    import Cookies from 'js-cookie'
+
+
     export default {
         name: "Login",
         data(){
@@ -53,6 +57,17 @@
 
             },
             login(){
+                axios.post("/users/login",{
+                    loginForm:this.loginForm
+                }).then((response)=>{
+                    let res=response.data
+                    console.log(res);
+                    if(res.status == '0'){
+                        alert('登录成功'+res.result.name)
+                    }else{
+                        alert('登录失败')
+                    }
+                })
 
             },
 
