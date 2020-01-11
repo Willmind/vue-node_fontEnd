@@ -1,7 +1,7 @@
 <template>
   <div class="form">
 
-    <el-form :model="loginForm" :rules="rules"  ref="loginForm" label-width="80px">
+    <el-form :model="loginForm"  ref="loginForm" label-width="80px">
       <h2>系统登录</h2>
       <el-form-item label="用户名" prop="name">
         <el-input  placeholder="请输入用户名" v-model="loginForm.username"></el-input>
@@ -37,16 +37,6 @@
                     username:'admin',
                     password:'123456',
                 },
-                rules:{
-                    name: [
-                        { required: true, message: '请输入用户名', trigger: 'blur' },
-                        { min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur' }
-                    ],
-                    password: [
-                        { required: true, message: '请输入密码', trigger: 'blur' }
-                    ]
-
-                }
             }
         },
         methods:{
@@ -63,7 +53,7 @@
                     let res=response.data
                     console.log(res);
                     if(res.status == '0'){
-                        alert('登录成功'+res.result.name)
+                        alert('登录成功屌晴')
                     }else{
                         alert('登录失败')
                     }
