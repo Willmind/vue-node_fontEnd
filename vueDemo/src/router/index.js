@@ -14,16 +14,7 @@ export default new Router({
       name:'登录',
       component:Login
     },
-    {
-      path:'/Register',
-      name:'注册',
-      component:Register
-    },
-    {
-      path:'/userList',
-      name:'列表',
-      component:userList
-    },
+
 
   ]
 })

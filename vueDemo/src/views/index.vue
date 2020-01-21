@@ -1,4 +1,9 @@
 <template>
+  <div>
+    <vue-tabs>
+
+    </vue-tabs>
+  </div>
 
 </template>
 
