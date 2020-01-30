@@ -54,9 +54,9 @@
         },
         data(){
             return{
-                loginData:true,
+                loginData:false,
                 registerData:false,
-                userListData:false,
+                userListData:true,
                 loginForm:{
                     username:'admin',
                     password:'123456',
