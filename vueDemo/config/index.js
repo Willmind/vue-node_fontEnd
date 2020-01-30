@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/users/*':{
-        target:'http://localhost:3000'
+        target:'http://localhost:3000'//对应自己的localhost接口，你默认后端接口是多少，跨域这里是
       }
 
     },
